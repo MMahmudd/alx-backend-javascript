@@ -1,8 +1,8 @@
 export default function createIteratorObject(report) {
   return (function* _() {
-    // eslint-disable-next-line no-restricted-syntax
+    // disablenext line no restrictionSyntax
     for (const department of Object.values(report.allEmployees)) {
-      // eslint-disable-next-line no-restricted-syntax
+      // disablenext line norestricted syntax
       for (const employee of department) {
         yield employee;
       }
